@@ -1,0 +1,13 @@
+scenarios:
+  - name: parallel_up_100
+    type: parallel
+    shift_bps: 100
+  - name: parallel_down_100
+    type: parallel
+    shift_bps: -100
+  - name: steepener
+    type: key_rate
+    shifts_bps:
+      2Y: 50
+      10Y: -25
+      30Y: -50
